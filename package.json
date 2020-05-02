@@ -1,6 +1,6 @@
 {
   "name": "jlesquembre",
-  "version": "1.3.0",
+  "version": "0.0.0",
   "description": "A personal card for Jose Luis Lafuente",
   "main": "/bin/card.js",
   "bin": {
