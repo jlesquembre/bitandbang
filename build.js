@@ -1,7 +1,7 @@
 "use strict";
 
 // Pull in our modules
-const chalk = require("chalk");
+const Chalk = require("chalk");
 const boxen = require("boxen");
 const fs = require("fs");
 const path = require("path");
@@ -10,8 +10,10 @@ const path = require("path");
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: "round"
+  borderStyle: "round",
 };
+
+const chalk = new Chalk.Instance({ level: 1 });
 
 // Text + chalk definitions
 const data = {
@@ -32,7 +34,7 @@ const data = {
   labelGitHub: chalk.white.bold("     GitHub:"),
   labelLinkedIn: chalk.white.bold("   LinkedIn:"),
   labelWeb: chalk.white.bold("        Web:"),
-  labelCard: chalk.white.bold("       Card:")
+  labelCard: chalk.white.bold("       Card:"),
 };
 
 // Actual strings we're going to output
